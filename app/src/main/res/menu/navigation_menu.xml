@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="Home"
+            android:id="@+id/home"
+            android:icon="@drawable/home_icon" />
+
+        <!--<item-->
+        <!--android:title="Pending Orders"-->
+        <!--android:id="@+id/pendingOrders"-->
+        <!--android:icon="@drawable/incomplete_icon" />-->
+
+        <item
+            android:title="Confirmed Orders"
+            android:id="@+id/confirmedOrders"
+            android:icon="@drawable/complete_orders_icon" />
+
+        <item
+            android:title="Final bill"
+            android:id="@+id/finalBill"
+            android:icon="@drawable/bill_icon" />
+
+    </group>
+
+    <item android:title="Account">
+
+        <menu>
+
+            <item
+                android:title="Sign out"
+                android:id="@+id/signOut"
+                android:icon="@drawable/logout_icon" />
+
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/appBackgroundColor"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.mydarkappfactory.hudsoncafe.QRCodeActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/mldkasm"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="number"
+                android:hint="OTP..."
+                android:textColorHint="@color/logoColor"
+                android:id="@+id/otpEdtTxt"
+                android:textColor="@color/textColor"
+                android:background="@color/statusBarColor"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/submitOtp"
+                android:onClick="submitOtp"
+                android:layout_below="@id/otpEdtTxt"
+                android:layout_marginTop="10dp"
+                android:text="generate qr code"
+                android:background="@color/logoColor"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="24sp"
+            android:text="OR"
+            android:id="@+id/onjewide"
+            android:layout_below="@id/mldkasm"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/onjewide"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/qrCode"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
